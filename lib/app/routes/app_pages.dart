@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/biodata/views/output_view.dart';
 
 import '../modules/biodata/bindings/biodata_binding.dart';
 import '../modules/biodata/views/biodata_view.dart';
@@ -30,5 +31,11 @@ class AppPages {
       page: () => const BiodataView(),
       binding: BiodataBinding(),
     ),
+    GetPage(
+      name: _Paths.OUTPUT,
+      page: () => OutputView(),
+      // binding: BiodataBinding(),
+    ),
+    
   ];
 }
