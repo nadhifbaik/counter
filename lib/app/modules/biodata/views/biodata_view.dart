@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/profile/controllers/profile_controller.dart';
 import '../controllers/biodata_controller.dart';
 
 class BiodataView extends GetView<BiodataController> {
@@ -7,6 +8,7 @@ class BiodataView extends GetView<BiodataController> {
 
   @override
   Widget build(BuildContext context) {
+    final BiodataController controller = Get.put(BiodataController());
     return Scaffold(
       appBar: AppBar(
         title: const Text('Formulir Biodata'),
